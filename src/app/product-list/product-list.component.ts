@@ -14,7 +14,7 @@ export class ProductListComponent {
   }
 
   onNotify() {
-    window.alert('セール時にお知らせします！');
+    window.alert('販売時にお知らせします！');
   }
 }
 
