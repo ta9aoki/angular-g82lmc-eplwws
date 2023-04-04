@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { products } from '../products';
 
 @Component({
@@ -8,10 +7,14 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
+  products = [...products];
   
   share() {
-    window.alert('The product has been shared!');
+    window.alert('共有しました！');
+  }
+
+  onNotify() {
+    window.alert('セール時にお知らせします！');
   }
 }
 
