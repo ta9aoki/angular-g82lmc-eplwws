@@ -6,13 +6,14 @@
       {{ product.name }}
     </a>
   </h3>
-
+    <p>{{ product.price }}円</p>
+  
   <p *ngIf="product.description">
     Descrition: {{ product.description }}
   </p>
 
   <button type="butoon" (click)="share()">
-    Share
+    共有する
   </button>
 </div>
 
